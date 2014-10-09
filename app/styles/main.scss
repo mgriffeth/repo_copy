@@ -121,13 +121,32 @@ left: 404px;
           width:230px;
           border-style:solid;
           margin:0px;
+          border-radius:5px;
+
         }
         #avatar_names{
-          width:230px;
-          height:54px;
           margin-top: 5px;
-          line-height: 1;
-          border-style:solid;
+line-height: 1;
+
+          #side_name{
+            display: block;
+overflow: hidden;
+width: 100%;
+font-size: 26px;
+line-height: 30px;
+text-overflow: ellipsis;
+          }
+          #side_username{
+            display: block;
+overflow: hidden;
+width: 100%;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px;
+color: #666;
+text-overflow: ellipsis;
+          }
         }
         #join_details{
           width:230px;
@@ -153,8 +172,7 @@ left: 404px;
       width:750px;
       height:1008px;
       float:right;
-      border-style:solid;
-      padding-left:10px;
+      padding-left:7px;
       padding-right:10px;
 
       #repo_tab_box{
@@ -167,13 +185,75 @@ left: 404px;
         width:730px;
         height:957px;
         margin:0;
-        border-style:solid;
         overflow:hidden;
 
         #filter_box{
           width:730px;
           height:45px;
           border-style:solid;
+        }
+        .repositories{
+          display:block;
+          height:100%;
+          padding:0;
+          .repo{
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            list-style: none;
+            border-bottom: 1px solid #eee;
+
+            .repo_stats{
+              width:124px;
+              height:16px;
+              margin-top: 6px;
+              float: right;
+              font-size: 12px;
+              font-weight: bold;
+              color: #888;
+
+              .lang{
+                display:inline-block;
+
+              }
+              .repo_stars{
+                margin-left: 8px;
+                display: inline-block;
+                color: #888;
+                text-decoration: none;
+
+              }
+              .repo_forks{
+                font-size: 12px;
+                font-weight: bold;
+                color: #888;
+              }
+            }
+            .repo_title{
+              margin: 0 0 8px;
+              font-size: 20px;
+              line-height: 1.2;
+              color: #4183c4;
+              text-decoration: none;
+
+            }
+            .repo_description{
+              max-width: 550px;
+              margin-top: 8px;
+              margin-bottom: 0;
+              font-size: 14px;
+              color: #666;
+
+            }
+            .repo_updated{
+              max-width: 550px;
+              margin-top: 8px;
+              margin-bottom: 0;
+              font-size: 14px;
+              color: #666;
+
+            }
+          }
         }
       }
     }

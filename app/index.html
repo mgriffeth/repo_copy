@@ -47,15 +47,17 @@
         </div>
       </header>
       <div id="container">
+
+
         <div id="side_container">
-          <div id="avatar_pic">
-            <img src="" alt="" />
-          </div>
+          <img id="avatar_pic"src="https://avatars.githubusercontent.com/u/8284438?v=2" alt="" />
           <h1 id="avatar_names">
-            <span id="side_name"></span>
-            <span id="side_username"></span>
+            <span id="side_name">Matthew Griffeth</span>
+            <span id="side_username">mgriffeth</span>
           </h1>
           <ul id="join_details">
+            <li><span id="clock"><span class="octicon octicon-clock"></span></span></li>
+            <li id="join_date"></li>
 
           </ul>
           <div id="side_stats">
@@ -66,14 +68,62 @@
           </div>
 
         </div>
-        <div id="repo_container">
-          <div id="repo_tab_box">
+
+      <!--  <div id="side_container">
+          <div id="avatar_pic">
+            <img src='<%= avatar_url %>' alt="" />
+          </div>
+          <h1 id="avatar_names">
+            <span id="side_name"><%= name %></span>
+            <span id="side_username"><%= login %></span>
+          </h1>
+          <ul id="join_details">
+            <li><span id="clock"><span class="octicon octicon-clock"></span></span></li>
+            <li id="join_date"><%= created_at %></li>
+
+          </ul>
+          <div id="side_stats">
 
           </div>
+          <div id="org_box">
+
+          </div>
+
+        </div> -->
+
+
+        <div id="repo_container">
+
+          <div id="repo_tab_box">
+          </div>
+
           <div id="repo_content">
             <div id="filter_box">
-
             </div>
+
+            <ul class="repositories">
+
+            </ul>
+
+            <script id="repo_template" type="text/template">
+              <li class="repo">
+
+                <div class="repo_stats">
+                  <h3 class="lang"><%= language %></h3>
+                  <a class="repo_stars" href="#"><span class="octicon octicon-star"></span>0</a>
+                  <a class="repo_forks" href="#"><span class="octicon octicon-git-branch"></span>0</a>
+                </div>
+
+                <h2 class="repo_title"><%= name %></h2>
+                <p class="repo_description"><%= description %></p>
+                <p class="repo_updated"><%= updated_at %></p>
+              </li>
+            </script>
+
+
+
+
+          </div>
 
           </div>
 
@@ -81,7 +131,7 @@
 <footer>
 </footer>
 
-    </div>
+
 
 
 
@@ -92,7 +142,7 @@
     <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
+        <script src="scripts/token.js"></script>
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
