@@ -3,24 +3,184 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+
+header{
+  width:1440px;
+  height:49px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  background-color:HSLA(0, 0%, 96%, 1);
+}
+////////////////////////////////////
+  #header_container{
+    width: 980px;
+    height:28px;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+
+#header_logo{
+  height:28px;
+  width:28px;
+  float:left;
+  margin-right:10px;
+
+  .mega-octicon {
+    font-size: 28px;
+    position:absolute;
   }
+
+}
+
+#search_form{
+float: left;
+width: 360px;
+margin-right: 10px;
+position:absolute;
+left:40px;
+  input{
+    width:100%;
+    border-radius:3px;
+  }
+}
+.header_nav{
+  position: absolute;
+width: 195px;
+height: 28px;
+padding: 0;
+margin: 0;
+left: 404px;
+    li{
+      display: block;
+      padding: 4px 8px;
+      height: 28px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 20px;
+      float: left;
+
+          a{
+            text-decoration:none;
+            float:left;
+            color: HSLA(0, 0%, 20%, 1);
+
+          }
+        }
+      }
+.user_links_box{
+  float:right;
+  width:239px;
+  height:28px;
+  margin:0;
+  list-style:none;
+  padding:0;
+
+    li{
+      float:left;
+      list-style:none;
+      display:block;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+        img{
+          width:20px;
+        }
+        a{
+          display: block;
+          padding: 4px 8px;
+          font-size: 13px;
+          font-weight: bold;
+          line-height: 20px;
+          color: #333;
+
+          }
+        }
+  }
+
+#container{
+    width:1000px;
+    height:1008px;
+    display:block;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+
+      #side_container{
+        width:250px;
+        height:535px;
+        float:left;
+        padding-left: 7px;
+        padding-right: 10px;
+        border-style:solid;
+
+        #avatar_pic{
+          height:230px;
+          width:230px;
+          border-style:solid;
+          margin:0px;
+        }
+        #avatar_names{
+          width:230px;
+          height:54px;
+          margin-top: 5px;
+          line-height: 1;
+          border-style:solid;
+        }
+        #join_details{
+          width:230px;
+          height:54px;
+          border-style:solid;
+          margin:0;
+          padding:0;
+        }
+        #side_stats{
+          width:230px;
+          height:75px;
+          border-style:solid;
+          padding-top:15px;
+          padding-bottom:15px;
+        }
+        #org_box{
+          width:230px;
+          height:92px;
+          border-style:solid;
+        }
+      }
+    #repo_container{
+      width:750px;
+      height:1008px;
+      float:right;
+      border-style:solid;
+      padding-left:10px;
+      padding-right:10px;
+
+      #repo_tab_box{
+        width:730px;
+        height:36px;
+        margin-bottom:15px;
+        border-style:solid;
+      }
+      #repo_content{
+        width:730px;
+        height:957px;
+        margin:0;
+        border-style:solid;
+        overflow:hidden;
+
+        #filter_box{
+          width:730px;
+          height:45px;
+          border-style:solid;
+        }
+      }
+    }
+
+}
+footer{
+  height:100px;
+  width:100%;
+  clear:both;
 }

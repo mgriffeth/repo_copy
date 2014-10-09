@@ -10,6 +10,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="/styles/octicons/octicons.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -23,27 +24,67 @@
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
 
-        <li>Sass</li>
+      <header>
+        <div id="header_container">
+          <a id="header_logo"><span class="mega-octicon octicon-mark-github"></span></a>
+          <form id="search_form">
+            <input type="text">
+          </form>
+          <ul class="header_nav">
+            <li class="navlink" id="explore"><a href="#">Explore</a></li>
+            <li class="navlink" id="gist"><a href="#">Gist</a></li>
+            <li class="navlink" id="blog"><a href="#">Blog</a></li>
+            <li class="navlink" id="help"><a href="#">Help</a></li>
+          </ul>
+          <ul class="user_links_box">
+            <li><a><img src="https://avatars2.githubusercontent.com/u/8284438?v=2&amp;s=40"><span>mgriffeth</span></a></li>
+            <li><a href="#"><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></a></li>
+            <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
+            <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
+            <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
+          </ul>
+        </div>
+      </header>
+      <div id="container">
+        <div id="side_container">
+          <div id="avatar_pic">
+            <img src="" alt="" />
+          </div>
+          <h1 id="avatar_names">
+            <span id="side_name"></span>
+            <span id="side_username"></span>
+          </h1>
+          <ul id="join_details">
 
+          </ul>
+          <div id="side_stats">
 
-        <li>Modernizr</li>
+          </div>
+          <div id="org_box">
 
+          </div>
 
-        <li>Bourbon & Neat</li>
+        </div>
+        <div id="repo_container">
+          <div id="repo_tab_box">
 
+          </div>
+          <div id="repo_content">
+            <div id="filter_box">
 
-        <li>UnderscoreJS</li>
+            </div>
 
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+          </div>
+
+        </div>
+<footer>
+</footer>
+
     </div>
+
+
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
