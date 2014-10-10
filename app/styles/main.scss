@@ -49,6 +49,7 @@ left:40px;
   input{
     width:100%;
     border-radius:3px;
+    height:30px;
   }
 }
 .header_nav{
@@ -243,10 +244,13 @@ color: #333;
       #repo_tab_box{
         width:730px;
         height:36px;
-        margin-bottom:15px;
+        margin-bottom:12px;
 
         #tab_nav_right{
           float:right;
+          position: absolute;
+          right: 230px;
+          top: 60px;
 
           a{
             @include button;
@@ -294,7 +298,9 @@ color: #333;
           li{
             list-style:none;
             display:inline-block;
-            margin:0;
+            margin:-3px;
+            border-color:HSLA(0, 0%, 87%, 1);
+            border-radius:3px;
 
             a{
               display: inline-block;
@@ -312,6 +318,19 @@ color: #333;
               }
             }
           }
+          .inactive{
+            border-bottom-style:solid;
+            border-width:1px;
+          }
+          .active{
+            border-style:solid;
+            border-bottom-style:none;
+            border-width:1px;
+
+          }
+          #publik{
+            width: 483px;
+          }
         }
       }
 
@@ -327,6 +346,10 @@ color: #333;
           height:45px;
           margin-top:1px;
           position: relative;
+          border-bottom-style:solid;
+          border-width:1px;
+          border-color:HSLA(0, 0%, 87%, 1);
+
 
             input{
               margin-right:0;
@@ -336,12 +359,13 @@ color: #333;
             #filtersearch{
               margin:0;
               position:absolute;
+              height: 29px;
+              top: 4px;
 
 
             }
             #formsearch{
               @include button;
-              position: relative;
               position: relative;
               display: inline-block;
               padding: 8px 12px;
@@ -382,6 +406,36 @@ color: #333;
               text-shadow:none;
               box-shadow:none;
               border:none;
+              height: 37px;
+              width: 68px;
+              padding-left: 22px;
+              position:relative;
+
+              span{
+                position:absolute;
+                left: 7px;
+                top: 12px;
+
+              }
+              }
+
+              .filter_options{
+                font-size:15px;
+                float:right;
+                position:absolute;
+                bottom: 15px;
+                right: 100px;
+
+                span{
+                  float:left;
+                  margin-right:6px;
+                  font-weight:bold;
+                }
+                li{
+                  list-style:none;
+                  float:left;
+                  margin-right:4px;
+                }
               }
         }
         .repositories{

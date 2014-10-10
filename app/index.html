@@ -29,7 +29,7 @@
         <div id="header_container">
           <a id="header_logo"><span class="mega-octicon octicon-mark-github"></span></a>
           <form id="search_form">
-            <input type="text">
+            <input type="text" placeholder="Search Github">
           </form>
           <ul class="header_nav">
             <li class="navlink" id="explore"><a href="#">Explore</a></li>
@@ -78,9 +78,9 @@
               <a id="edit_button"href="#"><span class="octicon octicon-pencil"></span>Edit profile</a>
             </div>
             <ul id="tab_nav">
-              <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
-              <li><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
-              <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+              <li class="inactive"><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+              <li class="active"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+              <li class="inactive" id="publik"><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
             </ul>
 
           </div>
@@ -88,14 +88,19 @@
           <div id="repo_content">
             <div id="filter_box">
               <form>
-                <input id="filtersearch" type="text">
+                <input id="filtersearch" type="text" placeholder="Find a repository...">
               </form>
               <a id="formsearch">Search</a>
               <a id="new_button"><span class="octicon octicon-repo"></span>New</a>
-              <h5>All</h5>
 
-              <ul>
 
+              <ul class="filter_options">
+                <span>All</span>
+                <li><a href="#">Public</a></li>
+                <li><a href="#">Private</a></li>
+                <li><a href="#">Sources</a></li>
+                <li><a href="#">Forks</a></li>
+                <li><a href="#">Mirrors</a></li>
 
               </ul>
             </div>
