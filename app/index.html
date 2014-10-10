@@ -38,7 +38,7 @@
             <li class="navlink" id="help"><a href="#">Help</a></li>
           </ul>
           <ul class="user_links_box">
-            <li><a><img src="https://avatars2.githubusercontent.com/u/8284438?v=2&amp;s=40"><span>mgriffeth</span></a></li>
+            <li><a id="headimage"><img src="https://avatars2.githubusercontent.com/u/8284438?v=2&amp;s=40"><span>mgriffeth</span></a></li>
             <li><a href="#"><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></a></li>
             <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
             <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
@@ -75,18 +75,29 @@
 
           <div id="repo_tab_box">
             <div id="tab_nav_right">
-              <a href="#"><span class="octicon octicon-pencil"></span>Edit profile</a>
+              <a id="edit_button"href="#"><span class="octicon octicon-pencil"></span>Edit profile</a>
             </div>
             <ul id="tab_nav">
               <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
               <li><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
-              <li><a href="#"><span class="octicon octicon-rss"></span>Activity</a></li>
+              <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
             </ul>
 
           </div>
 
           <div id="repo_content">
             <div id="filter_box">
+              <form>
+                <input id="filtersearch" type="text">
+              </form>
+              <a id="formsearch">Search</a>
+              <a id="new_button"><span class="octicon octicon-repo"></span>New</a>
+              <h5>All</h5>
+
+              <ul>
+
+
+              </ul>
             </div>
 
             <ul class="repositories">

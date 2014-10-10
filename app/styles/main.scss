@@ -1,6 +1,9 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/bitters/app/assets/stylesheets/base';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+
 
 // Custom Styles
 
@@ -26,10 +29,12 @@ header{
   width:28px;
   float:left;
   margin-right:10px;
+  color:black;
 
   .mega-octicon {
     font-size: 28px;
     position:absolute;
+
   }
 
 }
@@ -40,6 +45,7 @@ width: 360px;
 margin-right: 10px;
 position:absolute;
 left:40px;
+
   input{
     width:100%;
     border-radius:3px;
@@ -71,33 +77,35 @@ left: 404px;
       }
 .user_links_box{
   float:right;
-  width:239px;
+  width:240px;
   height:28px;
   margin:0;
   list-style:none;
   padding:0;
 
-    li{
-      float:left;
-      list-style:none;
-      display:block;
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
+  li{
+    float:left;
+    margin-right:18px;
 
-        img{
-          width:20px;
-        }
-        a{
-          display: block;
-          padding: 4px 8px;
-          font-size: 13px;
-          font-weight: bold;
-          line-height: 20px;
-          color: #333;
+  a{
+    font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+color: #333;
+  }
+  #headimage{
+    font-weight:bold;
+  }
 
-          }
-        }
+
+    img{
+      height:20px;
+      width:20px;
+      display: inline-block;
+      overflow: hidden;
+      line-height: 1;
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+  }
   }
 
 #container{
@@ -108,122 +116,123 @@ left: 404px;
     margin-left:auto;
     margin-right:auto;
 
-      #side_container{
-        width:250px;
-        height:535px;
-        float:left;
-        display:block;
-        padding-left: 7px;
-        padding-right: 10px;
+}
+#side_container{
+  width:250px;
+  height:535px;
+  float:left;
+  display:block;
+  padding-left: 7px;
+  padding-right: 10px;
 
-        #avatar_pic{
-          height:230px;
-          width:230px;
-          border-style:solid;
-          margin:0px;
-          border-radius:5px;
+  #avatar_pic{
+    height:230px;
+    width:230px;
+    border-style:solid;
+    margin:0px;
+    border-radius:5px;
 
-        }
-        #avatar_names{
-          margin-top: 5px;
-          line-height: 1;
+  }
+  #avatar_names{
+    margin-top: 5px;
+    line-height: 1;
 
-          #side_name{
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            font-size: 26px;
-            line-height: 30px;
-            text-overflow: ellipsis;
-          }
-          #side_username{
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 24px;
-            color: #666;
-            text-overflow: ellipsis;
-          }
-        }
-        #join_details{
-        list-style: none;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left:0;
-        border-top: 1px solid #eee;
-        margin-bottom:0;
+    #side_name{
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      font-size: 26px;
+      line-height: 30px;
+      text-overflow: ellipsis;
+    }
+    #side_username{
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      color: #666;
+      text-overflow: ellipsis;
+    }
+  }
+  #join_details{
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left:0;
+  border-top: 1px solid #eee;
+  margin-bottom:0;
 
-          li{
-            list-style:none;
-          }
-          #clock{
-            float: left;
-            width: 16px;
-            text-align: center;
-            margin-left: -24px;
-            color: #ccc;
+    li{
+      list-style:none;
+    }
+    #clock{
+      float: left;
+      width: 16px;
+      text-align: center;
+      margin-left: -24px;
+      color: #ccc;
 
-          }
-          #join_date{
-            width: 100%;
-            padding: 2px 0 2px 24px;
-            overflow-x: hidden;
-            white-space: nowrap;
-            font-size: 14px;
-            text-overflow: ellipsis;
-          }
+    }
+    #join_date{
+      width: 100%;
+      padding: 2px 0 2px 24px;
+      overflow-x: hidden;
+      white-space: nowrap;
+      font-size: 14px;
+      text-overflow: ellipsis;
+    }
 
-        }
+  }
 
-        #side_stats{
-          width:230px;
-          height:75px;
-          border-top-style:solid;
-          border-bottom-style:solid;
-          border-width:1px;
-          border-color:HSLA(0, 0%, 93%, 1);
-          padding-top:15px;
-          padding-bottom:15px;
-          text-align:center;
+  #side_stats{
+    width:230px;
+    height:75px;
+    border-top-style:solid;
+    border-bottom-style:solid;
+    border-width:1px;
+    border-color:HSLA(0, 0%, 93%, 1);
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align:center;
 
-          .stat{
-            float: left;
-            width: 33.333%;
-            font-size: 11px;
+    .stat{
+      float: left;
+      width: 33.333%;
+      font-size: 11px;
 
-            .stat_num{
-              color:#4183C4;
-              display: block;
-              font-size: 28px;
-              font-weight: bold;
-              line-height: 1;
-            }
-            .stat_text{
-              color: #999;
-            }
-          }
-        }
-        #org_box{
-          width:230px;
-          height:92px;
-
-          h3{
-            font-size:16px;
-          }
-          img{
-            display: inline-block;
-            overflow: hidden;
-            line-height: 1;
-            vertical-align: middle;
-            border-radius: 3px;
-            height:42px;
-            width:42px;
-          }
-        }
+      .stat_num{
+        color:#4183C4;
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1;
       }
+      .stat_text{
+        color: #999;
+      }
+    }
+  }
+  #org_box{
+    width:230px;
+    height:92px;
+
+    h3{
+      font-size:16px;
+    }
+    img{
+      display: inline-block;
+      overflow: hidden;
+      line-height: 1;
+      vertical-align: middle;
+      border-radius: 3px;
+      height:42px;
+      width:42px;
+    }
+  }
+}
     #repo_container{
       width:750px;
       height:1008px;
@@ -236,26 +245,47 @@ left: 404px;
         height:36px;
         margin-bottom:15px;
 
-
         #tab_nav_right{
           float:right;
 
-
           a{
-            text-decoration:none;
-            border: 1px solid #d5d5d5;
-            border-radius: 3px;
-            background-image: linear-gradient(#fcfcfc, #eee);
+            @include button;
+            display: inline-block;
+            padding: 7px 12px;
             font-size: 13px;
             font-weight: bold;
             color: #333;
-            padding: 0 10px;
-            line-height: 24px;
-            padding: 0 10px;
-            margin-top:2px;
-            margin-bottom:2px;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #eee;
+            background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+            background-image: linear-gradient(#fcfcfc, #eee);
+            background-repeat: repeat-x;
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-appearance: none;
+            text-shadow:none;
+            box-shadow:none;
+            border:none;
+
 
           }
+          #edit_button :hover{
+            background-color: #ddd;
+            background-image: -webkit-linear-gradient(#eee, #ddd);
+            background-image: linear-gradient(#eee, #ddd);
+            background-repeat: repeat-x;
+            border-color: #ccc;
+          }
+
         }
         #tab_nav{
           float:left;
@@ -264,6 +294,7 @@ left: 404px;
           li{
             list-style:none;
             display:inline-block;
+            margin:0;
 
             a{
               display: inline-block;
@@ -274,10 +305,16 @@ left: 404px;
               text-decoration: none;
               border: 1px solid transparent;
               border-bottom: 0;
+              margin:0;
+
+              span{
+                margin-right:5px;
+              }
             }
           }
         }
       }
+
       #repo_content{
         width:730px;
         height:957px;
@@ -286,22 +323,80 @@ left: 404px;
 
         #filter_box{
           width:730px;
+          padding:0;
           height:45px;
-          border-style:solid;
+          margin-top:1px;
+          position: relative;
+
+            input{
+              margin-right:0;
+              width:260px;
+              margin:0;
+            }
+            #filtersearch{
+              margin:0;
+              position:absolute;
+
+
+            }
+            #formsearch{
+              @include button;
+              position: relative;
+              position: relative;
+              display: inline-block;
+              padding: 8px 12px;
+              font-size: 13px;
+              font-weight: bold;
+              color: #333;
+              text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+              white-space: nowrap;
+              vertical-align: middle;
+              cursor: pointer;
+              background-color: #eee;
+              background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+              background-image: linear-gradient(#fcfcfc, #eee);
+              background-repeat: repeat-x;
+              border: 1px solid #d5d5d5;
+              border-radius: 3px;
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              -webkit-appearance: none;
+              text-shadow:none;
+              box-shadow:none;
+              border:none;
+              left: 265px;
+            }
+            #new_button{
+              @include button;
+              color: #fff;
+              background-color: #569e3d;
+              background-image: -webkit-linear-gradient(#79d858, #569e3d);
+              background-image: linear-gradient(#79d858, #569e3d);
+              background-repeat: repeat-x;
+              border-color: #4a993e;
+              float:right;
+              text-shadow:none;
+              box-shadow:none;
+              border:none;
+              }
         }
         .repositories{
           display:block;
           height:100%;
           padding:0;
           .repo{
-            position: relative;
             padding-top: 30px;
             padding-bottom: 30px;
             list-style: none;
             border-bottom: 1px solid #eee;
 
             .repo_stats{
-              width:124px;
+              display:inline-block;
+
               height:16px;
               margin-top: 6px;
               float: right;
@@ -312,13 +407,23 @@ left: 404px;
               .lang{
                 display:inline-block;
                 margin:0;
+                font-size:13px;
+                float:left;
+
 
               }
               .repo_stars{
                 margin-left: 8px;
+
                 display: inline-block;
                 color: #888;
                 text-decoration: none;
+                float:left;
+                font-size:13px;
+                margin-right:3px;
+                span{
+                  margin-right:3px;
+                }
 
               }
               .repo_forks{
@@ -326,6 +431,12 @@ left: 404px;
                 font-weight: bold;
                 color: #888;
                 text-decoration: none;
+                font-size:13px;
+
+
+                span{
+                  margin-right:3px;
+                }
               }
             }
             .repo_title{
@@ -334,6 +445,7 @@ left: 404px;
               line-height: 1.2;
               color: #4183c4;
               text-decoration: none;
+              font-weight:bold;
 
             }
             .repo_description{
@@ -350,13 +462,10 @@ left: 404px;
               margin-bottom: 0;
               font-size: 14px;
               color: #666;
-
             }
           }
         }
-      }
     }
-
 }
 
 
