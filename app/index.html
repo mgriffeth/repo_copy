@@ -48,7 +48,6 @@
       </header>
       <div id="container">
 
-
         <div id="side_container">
           <img id="avatar_pic"src="https://avatars.githubusercontent.com/u/8284438?v=2" alt="" />
           <h1 id="avatar_names">
@@ -56,45 +55,34 @@
             <span id="side_username">mgriffeth</span>
           </h1>
           <ul id="join_details">
-            <li><span id="clock"><span class="octicon octicon-clock"></span></span></li>
-            <li id="join_date"></li>
-
+            <li id="join_date"><span id="clock"><span class="octicon octicon-clock"></span></span>
+            <span id="joined_on">Joined on</span><time></time></li>
           </ul>
           <div id="side_stats">
-
+            <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Followers</span></a>
+            <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Starred</span></a>
+            <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Following</span></a>
           </div>
           <div id="org_box">
-
+            <h3>Organizations</h3>
+            <img src="https://avatars.githubusercontent.com/u/7996991?v=2" alt="" />
           </div>
-
         </div>
 
-      <!--  <div id="side_container">
-          <div id="avatar_pic">
-            <img src='<%= avatar_url %>' alt="" />
-          </div>
-          <h1 id="avatar_names">
-            <span id="side_name"><%= name %></span>
-            <span id="side_username"><%= login %></span>
-          </h1>
-          <ul id="join_details">
-            <li><span id="clock"><span class="octicon octicon-clock"></span></span></li>
-            <li id="join_date"><%= created_at %></li>
-
-          </ul>
-          <div id="side_stats">
-
-          </div>
-          <div id="org_box">
-
-          </div>
-
-        </div> -->
 
 
         <div id="repo_container">
 
           <div id="repo_tab_box">
+            <div id="tab_nav_right">
+              <a href="#"><span class="octicon octicon-pencil"></span>Edit profile</a>
+            </div>
+            <ul id="tab_nav">
+              <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+              <li><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+              <li><a href="#"><span class="octicon octicon-rss"></span>Activity</a></li>
+            </ul>
+
           </div>
 
           <div id="repo_content">

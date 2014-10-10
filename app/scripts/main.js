@@ -1,5 +1,6 @@
 var repos_url = 'https://api.github.com/users/mgriffeth/repos',
-    user_url = 'https://api.github.com/users/mgriffeth';
+    user_url = 'https://api.github.com/users/mgriffeth',
+    org_url = 'https://api.github.com/users/mgriffeth/orgs';
 
 
 var repo_template_string =$('#repo_template').html();

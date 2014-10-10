@@ -112,9 +112,9 @@ left: 404px;
         width:250px;
         height:535px;
         float:left;
+        display:block;
         padding-left: 7px;
         padding-right: 10px;
-        border-style:solid;
 
         #avatar_pic{
           height:230px;
@@ -126,46 +126,102 @@ left: 404px;
         }
         #avatar_names{
           margin-top: 5px;
-line-height: 1;
+          line-height: 1;
 
           #side_name{
             display: block;
-overflow: hidden;
-width: 100%;
-font-size: 26px;
-line-height: 30px;
-text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+            font-size: 26px;
+            line-height: 30px;
+            text-overflow: ellipsis;
           }
           #side_username{
             display: block;
-overflow: hidden;
-width: 100%;
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: 24px;
-color: #666;
-text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+            color: #666;
+            text-overflow: ellipsis;
           }
         }
         #join_details{
-          width:230px;
-          height:54px;
-          border-style:solid;
-          margin:0;
-          padding:0;
+        list-style: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left:0;
+        border-top: 1px solid #eee;
+        margin-bottom:0;
+
+          li{
+            list-style:none;
+          }
+          #clock{
+            float: left;
+            width: 16px;
+            text-align: center;
+            margin-left: -24px;
+            color: #ccc;
+
+          }
+          #join_date{
+            width: 100%;
+            padding: 2px 0 2px 24px;
+            overflow-x: hidden;
+            white-space: nowrap;
+            font-size: 14px;
+            text-overflow: ellipsis;
+          }
+
         }
+
         #side_stats{
           width:230px;
           height:75px;
-          border-style:solid;
+          border-top-style:solid;
+          border-bottom-style:solid;
+          border-width:1px;
+          border-color:HSLA(0, 0%, 93%, 1);
           padding-top:15px;
           padding-bottom:15px;
+          text-align:center;
+
+          .stat{
+            float: left;
+            width: 33.333%;
+            font-size: 11px;
+
+            .stat_num{
+              color:#4183C4;
+              display: block;
+              font-size: 28px;
+              font-weight: bold;
+              line-height: 1;
+            }
+            .stat_text{
+              color: #999;
+            }
+          }
         }
         #org_box{
           width:230px;
           height:92px;
-          border-style:solid;
+
+          h3{
+            font-size:16px;
+          }
+          img{
+            display: inline-block;
+            overflow: hidden;
+            line-height: 1;
+            vertical-align: middle;
+            border-radius: 3px;
+            height:42px;
+            width:42px;
+          }
         }
       }
     #repo_container{
@@ -179,7 +235,48 @@ text-overflow: ellipsis;
         width:730px;
         height:36px;
         margin-bottom:15px;
-        border-style:solid;
+
+
+        #tab_nav_right{
+          float:right;
+
+
+          a{
+            text-decoration:none;
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+            background-image: linear-gradient(#fcfcfc, #eee);
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            padding: 0 10px;
+            line-height: 24px;
+            padding: 0 10px;
+            margin-top:2px;
+            margin-bottom:2px;
+
+          }
+        }
+        #tab_nav{
+          float:left;
+          padding-left:0;
+
+          li{
+            list-style:none;
+            display:inline-block;
+
+            a{
+              display: inline-block;
+              padding: 8px 12px 7px;
+              font-size: 14px;
+              line-height: 20px;
+              color: #666;
+              text-decoration: none;
+              border: 1px solid transparent;
+              border-bottom: 0;
+            }
+          }
+        }
       }
       #repo_content{
         width:730px;
@@ -214,6 +311,7 @@ text-overflow: ellipsis;
 
               .lang{
                 display:inline-block;
+                margin:0;
 
               }
               .repo_stars{
@@ -227,6 +325,7 @@ text-overflow: ellipsis;
                 font-size: 12px;
                 font-weight: bold;
                 color: #888;
+                text-decoration: none;
               }
             }
             .repo_title{
@@ -259,6 +358,9 @@ text-overflow: ellipsis;
     }
 
 }
+
+
+
 footer{
   height:100px;
   width:100%;
