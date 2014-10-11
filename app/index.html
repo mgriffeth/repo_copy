@@ -38,36 +38,56 @@
             <li class="navlink" id="help"><a href="#">Help</a></li>
           </ul>
           <ul class="user_links_box">
+
+          </ul>
+          <script id="minitemp" type="text/template">
             <li><a id="headimage"><img src="https://avatars2.githubusercontent.com/u/8284438?v=2&amp;s=40"><span>mgriffeth</span></a></li>
             <li><a href="#"><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></a></li>
             <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
             <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
             <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
-          </ul>
+          </script>
+
         </div>
       </header>
       <div id="container">
 
         <div id="side_container">
-          <img id="avatar_pic"src="https://avatars.githubusercontent.com/u/8284438?v=2" alt="" />
+          <div id="av">
+        </div>
+
+        <script id="user_template" type="text/template">
+          <img id="avatar_pic"src="<%= avatar_url%>" alt="" />
           <h1 id="avatar_names">
-            <span id="side_name">Matthew Griffeth</span>
-            <span id="side_username">mgriffeth</span>
+            <span id="side_name"><%= name %></span>
+            <span id="side_username"><%= login %></span>
           </h1>
           <ul id="join_details">
             <li id="join_date"><span id="clock"><span class="octicon octicon-clock"></span></span>
-            <span id="joined_on">Joined on</span><time></time></li>
+            <span id="joined_on">Joined on</span><time><%= created_at %></time></li>
           </ul>
+        </script>
+
+
+
+
           <div id="side_stats">
             <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Followers</span></a>
             <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Starred</span></a>
             <a class="stat"><strong class="stat_num">0</strong><span class="stat_text">Following</span></a>
           </div>
+
           <div id="org_box">
             <h3>Organizations</h3>
-            <img src="https://avatars.githubusercontent.com/u/7996991?v=2" alt="" />
+
           </div>
+
         </div>
+
+        <script class="org_template" type="text/template">
+          <img src="<%= avatar_url%>" alt="" />
+        </script>
+
 
 
 
